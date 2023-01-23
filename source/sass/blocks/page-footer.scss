@@ -1,0 +1,24 @@
+.page-footer {
+  padding: 40px 0;
+  background-color: $color-black-russian;
+  color: $color-default-white;
+  margin-top: auto;
+}
+
+.page-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.page-footer__nav-list {
+  justify-content: center;
+  margin: 0;
+}
+
+.page-footer__socials {
+  justify-content: flex-end;
+  min-width: 100px;
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0;
+  list-style: none;
+  line-height: 16px;
+  gap: 40px;
+}
+
+.nav__link {
+  font-size: 14px;
+}
