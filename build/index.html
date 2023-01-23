@@ -4,14 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
+  <meta name="description" content="Сайт омского спортивного клуба SUPERGYM.">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <div class="page">
+    <h1 class="visually-hidden">SUPERGYM</h1>
+    <div class="page-header">
+      <header class="page-header__container container">
+        <a class="logo page-header__logo" aria-current="page">
+          <span class="visually-hidden">На&nbsp;главную.</span>
+          <img src="img/svg/logo.svg" alt="Логотип SUPERGYM." width="119" height="23">
+        </a>
+        <a class="page-header__link" href="tel:+78005555555">8-800-555-55-55</a>
+      </header>
+
+      <section class="announce page-header__announce container">
+        <p class="announce__label">Омск</p>
+        <h2 class="announce__heading">Фитнес центр</h2>
+        <ul class="announce__privileges">
+          <li class="announce__privilege">Тренажёрный зал</li>
+          <li class="announce__privilege">Групповые занятия</li>
+          <li class="announce__privilege">Кардио-зона</li>
+        </ul>
+        <a class="announce__btn btn" href="#">Купить абонемент</a>
+        <p class="announce__image">
+          <picture>
+            <source type="image/webp" media="(max-width: 320px)" srcset="img/announce-tablet.webp 1x, img/announce-tablet@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/announce-tablet.webp 1x, img/announce-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/announce.webp 1x, img/announce@2x.webp 2x">
+            <img src="img/announce.jpg" srcset="img/announce@2x.jpg 2x" alt="Каким Вы можете стать благодаря нам." loading="lazy">
+          </picture>
+        </p>
+      </section>
+    </div>
 
     <main>
+
+      <section class="about container">
+        <div class="about__content ">
+          <h2>Тренажерный зал</h2>
+          <p>Просторный зал площадью 900 кв/м</p>
+          <p>
+            Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный
+            зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+          </p>
+          <p>
+            В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40 тренажерами. Также в&nbsp;фитнес центре есть
+            несколько оборудованных залов для различных видов групповых занятий.
+          </p>
+        </div>
+        <p class="about__picture">
+          <picture>
+            <source type="image/webp" media="(max-width: 320px)" srcset="img/about-mobile.webp 1x, img/about-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/about-tablet.webp 1x, img/about-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/about.webp 1x, img/about@2x.webp 2x">
+            <img src="img/about.jpg" srcset="img/about@2x.jpg 2x" alt="Тренажерный зал фитнес центра." loading="lazy">
+          </picture>
+        </p>
+        <div class="about__video">
+          <div class="video" data-video="">
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__inner container">
+        <a class="logo page-footer__logo" aria-current="page">
+          <span class="visually-hidden">На&nbsp;главную.</span>
+          <img src="img/svg/logo.svg" alt="Логотип SUPERGYM." width="119" height="23">
+        </a>
+        <ul class="nav page-footer__nav-list nav--narrow">
+          <li>
+            <a class="nav__link" href="#!">Услуги</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#!">Абонементы</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#!">Акции</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#!">Тренеры</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#!">Расписание</a>
+          </li>
+        </ul>
+        <ul class="socials page-footer__socials">
+          <li class="socials__item">
+            <a class="socials__link socials__link--vk" href="#!">
+              <span class="visually-hidden">Мы&nbsp;в&nbsp;Вконтакте.</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--ok" href="#!">
+              <span class="visually-hidden">Мы&nbsp;в&nbsp;Одноклассниках.</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--reddit" href="#!">
+              <span class="visually-hidden">Мы&nbsp;в&nbsp;Reddit.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </div>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
