@@ -5,8 +5,26 @@ $color-transparent: rgba($color-default-white, 0);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/000000
+$color-ghost-white: #f8f9fc;
+$color-sapphire: #102654;
+$color-crimson: #d10a42;
+$color-dark-cerulean: #003d85;
+$color-torch-red: #ed0233;
+$color-egyptian-blue: #103aae;
+$color-cobalt: #003eb7;
+$color-chambray: #495a7d;
+$color-whisper: #e8e8e8;
+$color-black-russian: #030a1a;
+$color-venetian-red: #b80027;
+
+// Opacity
+$color-grey-20: rgba(120, 120, 120, 0.2);
+$color-sapphire-50: rgba($color-sapphire, 0.5);
+$color-sapphire-89: rgba($color-sapphire, 0.89);
 
 // Gradient
+$color-gradient: linear-gradient(to bottom right, #d10a42, #00359f);
+$color-background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
 
 // Shadow
 
@@ -22,9 +40,10 @@ $trans-default: 0.3s $tf-default;
 
 // Viewports
 $vp-320: 320px;
+$vp-425: 425px;
 $vp-768: 768px;
 $vp-1024: 1024px;
-$vp-1100: 1100px;
+$vp-1200: 1200px;
 $vp-1250: 1250px;
 $vp-1300: 1300px;
 
