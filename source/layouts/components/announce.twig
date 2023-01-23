@@ -1,0 +1,21 @@
+<section class="announce {{ bemMix }}">
+	<p class="announce__label">{{ label }}</p>
+
+	<h2 class="announce__heading">{{ title }}</h2>
+
+	{% if privileges %}
+		<ul class="announce__privileges">
+			{% for privilege in privileges %}
+				<li class="announce__privilege">{{ privilege }}</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+
+	<a class="announce__btn btn" href="{{ link.url }}">{{ link.title }}</a>
+
+	{% if image %}
+		<p class="announce__image">
+			{% include 'picture.twig' with image %}
+		</p>
+	{% endif %}
+</section>

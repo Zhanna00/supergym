@@ -1,9 +1,16 @@
 .btn {
-
+  padding: 20px 24px 19px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
   font-family: inherit;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   text-align: center;
+  color: inherit;
+  background-color: inherit;
   overflow-wrap: anywhere;
-  border: none;
+  border: 2px solid;
   border-radius: 0;
   cursor: pointer;
   user-select: none;
