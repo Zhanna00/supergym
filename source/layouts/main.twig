@@ -6,6 +6,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ projectName }}</title>
+		<meta name="description" content="{{ description }}">
 
 		<link rel="stylesheet" href="css/style.min.css{{ version }}">
 	</head>
@@ -13,6 +14,9 @@
 	<body>
 		<div class="page">
 			{% block header %}
+				<h1 class="visually-hidden">{{ projectName }}</h1>
+
+				{% include 'components/page-header.twig' %}
 			{% endblock %}
 
 			<main>
@@ -20,6 +24,7 @@
 			</main>
 
 			{% block footer %}
+				{% include 'components/page-footer.twig' %}
 			{% endblock %}
 		</div>
 
