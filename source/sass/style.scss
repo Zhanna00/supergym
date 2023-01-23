@@ -12,12 +12,20 @@
 
 // Blocks
 @import "blocks/btn";
+@import "blocks/heading";
 @import "blocks/page";
 @import "blocks/page-footer";
 @import "blocks/page-header";
 @import "blocks/nav";
 @import "blocks/socials";
 @import "blocks/announce";
+@import "blocks/about";
+@import "blocks/video";
+@import "blocks/priority-section";
+@import "blocks/tabs";
+@import "blocks/cards-list";
+@import "blocks/card";
+@import "blocks/price";
 
 // ❗ обязательно используйте миксины hover-focus и active для отключения ховеров на тач устройствах
 // адаптив пишем внутри каждого класса

@@ -1,7 +1,6 @@
 import loadScript from '../utils/load-script.js';
 
 let scriptLoaded = false;
-const YT = 0;
 
 export default (containerElement) => {
   const linkElement = containerElement.querySelector('[data-control]');

@@ -1,0 +1,14 @@
+<section
+	class="priority-section {{ alter ? 'priority-section--alter'}} {{ bemMix }}"
+	{{ id ? 'id="' ~ id ~ '"' }}
+	{{ decor ? background(decor) }}
+>
+	<div class="priority-section__inner {{ decor ? 'priority-section__inner--decor' }} container">
+		<h2 class="priority-section__heading heading">{{ data.heading }}</h2>
+		{{ content ?? ''}}
+
+		{% if component and data %}
+			{% include component ~ '.twig' with data|merge({ bemMix: 'priority-section__body' }) %}
+		{% endif %}
+	</div>
+</section>

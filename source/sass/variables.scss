@@ -7,6 +7,7 @@ $color-transparent: rgba($color-default-white, 0);
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/000000
 $color-ghost-white: #f8f9fc;
 $color-sapphire: #102654;
+$color-smalt: #00359f;
 $color-crimson: #d10a42;
 $color-dark-cerulean: #003d85;
 $color-torch-red: #ed0233;
@@ -23,10 +24,11 @@ $color-sapphire-50: rgba($color-sapphire, 0.5);
 $color-sapphire-89: rgba($color-sapphire, 0.89);
 
 // Gradient
-$color-gradient: linear-gradient(to bottom right, #d10a42, #00359f);
+$border-image: linear-gradient(148.82deg, $color-crimson 0.85%, $color-smalt 100%) 1;
 $color-background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
 
-// Shadow
+// Offsets
+$offset-fluid: calc(50% - 650px);
 
 // Typography
 $fz-default: 16px;
