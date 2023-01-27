@@ -3,7 +3,7 @@
   background-color: $color-ghost-white;
 
   @include vp-1199 {
-    padding: 91px 0 100px;
+    padding: 91px 0 101px;
   }
 
   @include vp-767 {
@@ -18,7 +18,7 @@
     z-index: 1;
 
     @include vp-1199 {
-      padding-top: 9px;
+      padding-top: 10px; //PP
     }
 
     &::before {
@@ -29,6 +29,7 @@
       z-index: -1;
       width: 470px;
       height: 494px;
+      background-size: cover;
 
       @include background-image;
 
@@ -49,6 +50,14 @@
 .priority-section__heading {
   margin: 0;
   text-align: center;
+
+  @include vp-1199 {
+    margin-left: -14px; //PP
+  }
+
+  @include vp-767 {
+    margin-left: -10px; //PP
+  }
 
   &:only-child {
     margin: 0;
@@ -83,6 +92,11 @@
 
     @include vp-1199 {
       margin-bottom: 28px;
+      margin-left: -22px; //PP
+    }
+
+    @include vp-767 {
+      margin-left: -17px; //PP
     }
   }
 }
