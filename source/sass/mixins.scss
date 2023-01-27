@@ -71,6 +71,27 @@
   }
 }
 
+@mixin custom-scrollbar($color-thumb, $color-track, $size: 4px) {
+  scrollbar-color: $color-thumb $color-track;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+    background-color: $color-track;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $color-track;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-thumb;
+    border: none;
+    border-radius: calc($size / 4);
+  }
+}
+
 @mixin hover {
   @media (hover: hover) {
     &:hover,
@@ -124,7 +145,7 @@
 
 @mixin gradient-text {
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to right bottom, $color-crimson 0%, $color-cobalt-light 87.33%);
+  background-image: $number-gradient;
   background-clip: text;
 }
 
