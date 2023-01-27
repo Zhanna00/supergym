@@ -1,0 +1,9 @@
+<ul class="tariffs  {{ bemMix }}">
+	{% for tariff in data.list %}
+		<li class="tariffs__{{ tariff.tagline ? 'tagline' : 'item' }}">
+			<p class="tariffs__{{ tariff.tagline ? 'tagline-' }}value">{{ tariff.value }}</p>
+			<p class="tariffs__{{ tariff.tagline ? 'tagline-' }}key">{{ tariff.key }}</p>
+			<div class="tariffs__content">{{ tariff.content }}</div>
+		</li>
+	{% endfor %}
+</ul>
