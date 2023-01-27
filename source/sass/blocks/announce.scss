@@ -7,6 +7,22 @@
   min-height: 658px;
   padding-top: 51px;
   padding-bottom: 51px;
+
+  @include vp-1199 {
+    grid-template-columns: 113px 187px 1fr;
+    gap: 12px 24px;
+    min-height: auto;
+    padding-top: 19px;
+    padding-bottom: 82px;
+  }
+
+  @include vp-767 {
+    grid-template-areas: ". label" "features heading" "btn btn";
+    grid-template-columns: 113px 1fr;
+    column-gap: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .announce__label,
