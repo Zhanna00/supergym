@@ -1,0 +1,12 @@
+<dl class="options-list {{ bemMix }}">
+	{% for option in options %}
+		<dt class="options-list__key">{{ option.key }}</dt>
+		<dd class="options-list__value">
+			{{ option.value }}
+
+			{% if option.additions %}
+				<span class="options-list__additions">{{ option.additions }}</span>
+			{% endif %}
+		</dd>
+	{% endfor %}
+</dl>
