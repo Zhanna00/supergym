@@ -29,7 +29,6 @@
       z-index: -1;
       width: 470px;
       height: 494px;
-      // background-size: cover;
 
       @include background-image;
 
@@ -80,6 +79,7 @@
 
   .priority-section__heading {
     margin-bottom: 26px;
+    margin-left: 10px;
 
     @include vp-1199 {
       margin-bottom: 28px;

@@ -1,0 +1,10 @@
+{% extends '../main.twig' %}
+
+{% block main %}
+	{% include '../components/priority-section.twig' with {
+		content,
+		data: {
+			heading: heading
+		}
+	} %}
+{% endblock %}
