@@ -23,19 +23,6 @@
       margin-left: -5px; //PP
     }
   }
-
-  &--pad {
-    margin-left: 10px;
-
-    @include vp-1199 {
-      margin-left: -4px; //PP
-      margin-bottom: -41px; //PP
-    }
-
-    @include vp-767 {
-      margin-bottom: -43px; //PP
-    }
-  }
 }
 
 .page__preview {
@@ -103,6 +90,10 @@
 
   @include vp-1199 {
     margin-bottom: 100px;
+
+    .page__heading {
+      margin-bottom: 41px;
+    }
   }
 
   @include vp-767 {
