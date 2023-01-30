@@ -7,7 +7,7 @@ export default () => ({
     label: 'Страница не найдена',
     link: {
       title: 'На главную',
-      utl: 'index.html',
+      url: 'index.html',
     },
     title,
   },

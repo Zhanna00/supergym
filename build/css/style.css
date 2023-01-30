@@ -1436,6 +1436,7 @@ input[type=number]::-webkit-inner-spin-button {
   padding: 11px 0;
   font-size: 20px;
   line-height: 30px;
+  color: inherit;
   background-color: transparent;
   border: none;
   outline-offset: 0;
