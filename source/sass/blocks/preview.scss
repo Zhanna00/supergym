@@ -1,7 +1,6 @@
 .preview {
   display: grid;
   grid-template-columns: 500px 1fr;
-  align-items: center;
 
   @include vp-1199 {
     grid-template-columns: 292px 386px;
@@ -10,7 +9,6 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    justify-items: center;
   }
 }
 
@@ -18,7 +16,8 @@
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 9px 50px;
-  align-self: start;
+  align-content: start;
+  height: 100%;
   padding: 80px 78px 87px;
   color: $color-default-white;
   background-color: $color-torch-red;
@@ -84,6 +83,13 @@
 
 .preview__picture {
   margin: 0;
+
+  @include vp-1299 {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
 
   img {
     object-fit: cover;

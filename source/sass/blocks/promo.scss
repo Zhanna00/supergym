@@ -53,11 +53,14 @@
 }
 
 .promo__picture {
-  align-self: center;
   margin: 0;
 
-  @include vp-767 {
-    justify-self: center;
+  @include vp-1199 {
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
   }
 }
 

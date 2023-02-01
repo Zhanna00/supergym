@@ -81,7 +81,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 63px;
+    margin-bottom: 64px;
   }
 }
 
@@ -115,10 +115,6 @@
     width: 678px;
   }
 
-  @include vp-767 {
-    width: 395px;
-  }
-
   @include vp-424 {
     width: 290px;
   }
@@ -133,7 +129,7 @@
     }
 
     @include vp-767 {
-      width: 332px;
+      max-width: 564px;
     }
   }
 }
