@@ -44,7 +44,6 @@
   @include vp-1199 {
     grid-row: span 1;
     grid-column: 1 / -1;
-    // justify-self: center;
   }
 
   @include vp-767 {
@@ -55,12 +54,10 @@
 .promo__picture {
   margin: 0;
 
-  @include vp-1299 {
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 

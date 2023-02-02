@@ -2041,6 +2041,13 @@ input[type=number]::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.promo__picture img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .promo__content {
   display: flex;
   flex-direction: column;
@@ -2285,13 +2292,6 @@ input[type=number]::-webkit-inner-spin-button {
   .preview__picture img {
     height: 100%;
     width: 100%;
-  }
-
-  .promo__picture img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
   }
 }
 
