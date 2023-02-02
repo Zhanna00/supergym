@@ -2,7 +2,9 @@
 	<header class="page-header__container container">
 		{% include 'logo.twig' with { bemMix: 'page-header__logo' } %}
 
-		<a class="page-header__link" href="{{ tel.url }}">{{ tel.title }}</a>
+		<div class="page-header__links">
+			<a class="page-header__link" href="{{ tel.url }}">{{ tel.title }}</a>
+		</div>
 	</header>
 
 	{% include 'announce.twig' with announce|merge({ bemMix: 'page-header__announce container' }) %}
