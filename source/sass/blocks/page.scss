@@ -115,6 +115,10 @@
     width: 678px;
   }
 
+  @include vp-767 {
+    width: calc(100vw + 30px);
+  }
+
   @include vp-424 {
     width: 290px;
   }
