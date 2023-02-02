@@ -51,8 +51,8 @@
 }
 
 .page-header__logo {
-  flex-shrink: 0;
   margin-top: 10px;
+  flex-shrink: 0;
 
   @include vp-1199 {
     width: 82px;
@@ -65,9 +65,14 @@
   }
 }
 
-.page-header__link {
-  min-width: 155px;
+.page-header__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px 30px;
+}
 
+.page-header__link {
   @include default-interactive;
 }
 
